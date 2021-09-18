@@ -1,0 +1,20 @@
+Git init podemos iniciar o git na pasta desejada.
+
+Git status podemos ver as condições do diretório.
+
+Git add ./* podemos adicionar todas as alterações do diretório.
+
+Git add arquivo podemos adicionar apenas o arquivo do diretório.
+
+Git clone repositório podemos clonar o repositório na nossa maquina.
+
+Git commit -m "Descrião da alteração" podemos deixar uma descrição no comite dos arquivos.
+
+Git remote add origin link.repositório podemos apontar para o repositório.
+
+Git remote -v podemos ver o repositório que estamos apontando.
+
+Git push origin master/main podemos enviar para o GitHub nosso projeto desde que esteja comitado e sem alterações.
+
+Git pull atualiza os arquivos no diretório atual.
+
