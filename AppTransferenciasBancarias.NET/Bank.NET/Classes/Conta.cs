@@ -47,6 +47,21 @@ namespace Bank.NET
            }
        }
 
+       public void AumentarCredito(double aumentaCredito)
+       {
+           if (this.Saldo > this.Credito && aumentaCredito < this.Saldo)
+            {
+                this.Credito += aumentaCredito;
+
+                Console.WriteLine("Credito atual é {0} ", this.Credito);
+            }
+            else
+            {
+                Console.WriteLine("Infelizmente não podemos liberar mais credito no momento. ");
+            }
+
+       }
+
         public override string ToString()
         {
             string retorno = "";

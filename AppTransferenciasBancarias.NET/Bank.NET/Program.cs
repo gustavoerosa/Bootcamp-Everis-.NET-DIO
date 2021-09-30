@@ -30,6 +30,9 @@ namespace Bank.NET
                     case "5":
                         Depositar();
                         break;
+                    case "6":
+                        AumentarCredito();
+                        break;
                     case "C":
                         Console.Clear();
                         break;
@@ -46,6 +49,17 @@ namespace Bank.NET
             Console.ReadLine();
         }
 
+        private static void AumentarCredito()
+        {
+            Console.WriteLine("Digite o numero da conta: ");
+            int indiceConta = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite o valor que deseja aumentar de credito: ");
+            double maisCredito = double.Parse(Console.ReadLine());
+
+            listContas[indiceConta].AumentarCredito(maisCredito);
+        }
+        
         private static void Transferir()
         {
             Console.WriteLine("Digite o numero da conta de origem: ");
@@ -135,6 +149,7 @@ namespace Bank.NET
             Console.WriteLine("3- Transferir");
             Console.WriteLine("4- Sacar");
             Console.WriteLine("5- Depositar");
+            Console.WriteLine("6- Aumentar Credito");
             Console.WriteLine("C- Limpar tela");
             Console.WriteLine("X- Sair");
             Console.WriteLine();
